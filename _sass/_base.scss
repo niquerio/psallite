@@ -42,6 +42,7 @@ p {
     margin-bottom: 20px;
 }
 
+
 .bg-primary {
     background-color: $theme-primary;
 }
@@ -69,16 +70,16 @@ aside {
 
 // Navigation
 
-.navbar-default {
-    background-color: white;
+.navbar-inverse {
+    background-color: $theme-dark;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
-        @include sans-serif-font;
-        font-weight: 700;
-        text-transform: uppercase;
+        @include cursive-font;
+        font-weight: 550;
+        font-size: xx-large;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -91,7 +92,7 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
+                color: rgba(white, .7);
                 &:hover {
                     color: $theme-primary;
                 }
@@ -110,7 +111,7 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: transparent;
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
@@ -126,11 +127,11 @@ aside {
             }
         }
         &.affix {
-            background-color: white;
-            border-color: rgba($theme-dark, .5);
+            background-color: $theme-dark;
+            border-color: rgba(white, .3);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
-                font-size: 14px;
+                //font-size: 14px;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
@@ -138,9 +139,9 @@ aside {
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: rgba(white, .7);
                 &:hover {
-                    color: $theme-primary;
+                    color: white;
                 }
             }
         }
@@ -155,7 +156,11 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #333;
+    background-image: url('../img/psallite_shield_background.svg');
     text-align: center;
     color: white;
     .header-content {
@@ -166,7 +171,7 @@ header {
         .header-content-inner {
             h1 {
                 font-weight: 700;
-                text-transform: uppercase;
+                //text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -174,8 +179,8 @@ header {
                 margin: 30px auto;
             }
             p {
-                font-weight: 300;
-                color: rgba(white, .7);
+                font-weight: 600;
+                color: white;
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -209,6 +214,9 @@ header {
 
 .section-heading {
     margin-top: 0;
+}
+.big-heading {
+  font-size: xxx-large;
 }
 
 .service-box {
@@ -317,7 +325,6 @@ header {
 
 // Contact
 #contact .fa {
-    color: $theme-dark;
     font-size: 4em;
 }
 

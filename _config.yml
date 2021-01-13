@@ -1,12 +1,9 @@
 # Site settings
-title:
-email:
+title: Psallite
+email: psallite@thedancingmaster.net
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
-
-twitter_username:
-github_username:
+url: "http://psallitemusic.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
